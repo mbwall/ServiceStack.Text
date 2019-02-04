@@ -401,7 +401,7 @@ namespace ServiceStack.Text.Common
             if (value.Length == 1)
             {
                 int singleDigit = value[0];
-                if (singleDigit >= 48 || singleDigit <= 57) // 0 - 9
+                if (singleDigit >= 48 && singleDigit <= 57) // 0 - 9
                 {
                     var result = singleDigit - 48;
                     if (bestFit)
